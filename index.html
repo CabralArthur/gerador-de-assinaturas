@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles/styles.css" rel="stylesheet">
+    <link href="'https://fonts.googleapis.com/css2?family=Inter:wght@400;300;700&display=swap'" rel="stylesheet">
+    <title>Assinatura Digital</title>
+    <style type="text/css">
+        * {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;" id="form-inputs">
+        <div style="display: flex; flex-direction: column; max-width: 257px; gap: 16px; margin-bottom: 32px;">
+            <div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="name">
+                        Nome
+                    </label>
+                    <input type="text" placeholder="Nome" onkeyup="changeInput(this, 'person-name')" id="name">
+                </div>
+                <br />
+                <div style="display: flex; flex-direction: column;">
+                    <label for="role">
+                        Cargo
+                    </label>
+                    <input type="text" placeholder="Cargo" onkeyup="changeInput(this, 'person-role')" id="role">
+                </div>
+            </div>
+
+            <div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="phone">
+                        Telefone
+                    </label>
+                    <input type="text" placeholder="Telefone" onkeyup="changeInput(this, 'person-phone')" id="phone">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="whatsapp-link">Link do Whatsapp</label>
+                    <input type="text" placeholder="Link do Whatsapp" id="whatsapp-link "
+                        onkeyup="changeInput(this, 'person-whatsapp-link')">
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <label for="image-link">Link da Imagem</label>
+                <input type="text" placeholder="Link da Imagem" id="image-link"
+                    onkeyup="changeInput(this, 'person-image-link')">
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <label for="has-whatsapp">Possuo Whatsapp?</label>
+                <input type="checkBox" id="has-whatsapp" onchange="changeInput(this, 'person-has-whatsapp')" checked>
+            </div>
+
+            <a onclick="downloadHTML()" id="button-copy" href="#">Download</a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div style="max-width: 257px;">
+            <div style="display:flex; align-items: center; margin: 0px 0px 0px 0px;">
+                <div style="height: 60px; width: 60px; border-radius: 50%; margin: 4px 16px 0 8px;">
+                    <img src="https://pic.onlinewebfonts.com/svg/img_264570.png" alt="Foto do profissional"
+                        style="display: block; object-fit: cover; width: 100%; height: 100%; border-radius: 50%;"
+                        id="person-image-link">
+                </div>
+                <div>
+                    <h1 style="font-weight: bold; font-size: 16px; color: #26282a;" id="person-name">Thomas Shelby</h1>
+                    <h2 style="margin-bottom: 6px; font-size: 10px; color: #4e5255; font-weight: 400;">
+                        <span id="person-role">
+                            Diretor Comercial
+                        </span>
+                    </h2>
+                    <div style="display: flex;">
+                        <h2 style="color: #26282a; font-weight: normal; font-weight: bold; font-size: 14px; margin: 3px 10px 0px 0px;"
+                            id="person-phone">81 987271 2312</h2>
+                        <a href="https://api.whatsapp.com/send?phone=5581982798309&text=Ol%C3%A1%2C%20Bruna"
+                            target="__blank" style="display: flex; align-items: center; width: 13px; height: 13px;
+                            margin-bottom: 16px;" id="person-whatsapp-link">
+                            <img src="https://files.appamigo.com.br/images/__assinatura-emails__/whatsapp-icon.png"
+                                alt="Ícone do whatsapp" style="width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    padding: 6px;
+                                    border: 1px solid #D9E1E8;
+                                    border-radius: 6px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin-bottom: 15px; margin-top: 20px; height: 1px; width: 257px; background-color: #D9E1E8; border: none;">
+
+            <div style="display: flex; align-items:center;">
+                <!-- Imagem do AMIGO -->
+                <div style="padding-left: 10px; width: 79.79px; height: 18px; margin-right: 89px;">
+                    <img src="https://files.appamigo.com.br/images/__assinatura-emails__/amigo-icon.png"
+                        style="width: 100%; object-fit: cover;" alt="Logo do Amigo">
+                </div>
+                <!-- Ícones -->
+                <div style="display: flex; align-items: center;">
+                    <a href="https://appamigo.com.br/" style="text-decoration: none;" target="_blank">
+                        <!-- Trocar o link dentro o href -->
+                        <img src="https://files.appamigo.com.br/images/__assinatura-emails__/site-amigo.png"
+                            alt="Ícone do Site" style="width: 14px; height: 14px; padding-right: 14px">
+                    </a>
+                    <a href="https://www.instagram.com/amigoapp/" style="text-decoration: none;" target="_blank">
+                        <!-- Trocar o link dentro o href -->
+                        <img src="https://files.appamigo.com.br/images/__assinatura-emails__/instagram-amigo.png"
+                            alt="Ícone do Instagram" style="width: 14px; height: 14px; margin-right: 14px">
+                    </a>
+                    <a href="https://www.linkedin.com/company/appamigo/mycompany/" style="text-decoration: none;"
+                        target="_blank">
+                        <!-- Trocar o link dentro o href -->
+                        <img src="https://files.appamigo.com.br/images/__assinatura-emails__/linkedin-amigo.png"
+                            alt="Ícone do Linkedin" style="width: 14px; height: 14px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.js" integrity="sha512-NOmoi96WK3LK/lQDDRJmrobxa+NMwVzHHAaLfxdy0DRHIBc6GZ44CRlYDmAKzg9j7tvq3z+FGRlJ4g+3QC2qXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
+
