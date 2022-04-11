@@ -1,15 +1,9 @@
 const downloadHTML = () => {
     const button = document.getElementById('button-copy');
-    const formInputs = document.getElementById('form-inputs');
+    const card = document.getElementById('main-content');
 
-    formInputs.style.display = 'none';
-
-    button.href = 'data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML);
+    button.href = 'data:text/html;charset=UTF-8,'+encodeURIComponent(card.outerHTML);
     button.download = `assinatura-${getFileSufix()}.html`;
-
-    setTimeout(() => {
-        formInputs.style.display = 'flex';
-    }, 300)
 }
 
 const getFileSufix = () => {
