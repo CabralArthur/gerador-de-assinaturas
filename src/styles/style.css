@@ -1,0 +1,17 @@
+.main-div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.ds-flex {
+    display: flex;
+}
+
+.ds-flex__column {
+    flex-direction: column;
+}
+
+.gp-16 {
+    gap: 16px;
+}
