@@ -1,7 +1,89 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 .main-div {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.header__amigo--image {
+    width: 130px;
+    height: 30px;
+}
+
+.header__amigo--logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__text--title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #4E5255;
+}
+
+.header__text--subtitle {
+    font-size: 16px;
+    color: #4E5255;
+}
+
+.form__wrapper {
+    margin-bottom: 16px !important;
+}
+
+.form__wrapper label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #26282A;
+    margin-bottom: 8px;
+}
+
+.form__input {
+    width: 288px;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #D9E1E8;
+}
+
+.form__input::placeholder {
+    color: #C0CDD8;
+}
+
+.form__input--checkbox {
+    border-radius: 8px;
+}
+
+.form__label--no-margin {
+    margin: 0 !important;
+}
+
+.input__primary {
+    margin-bottom: 8px;
+}
+
+.text__center {
+    text-align: center;
+}
+
+.button__primary {
+    padding: 12px 8px;
+    border-radius: 8px;
+    background: #008CFF;
+    text-decoration: none;
+}
+
+.button__primary:hover {
+    background: #017ce2;
+}
+
+.button__primary span {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 .ds-flex {
@@ -12,6 +94,44 @@
     flex-direction: column;
 }
 
+.ds-flex__align--center {
+    align-items: center;
+}
+
+.ds-flex__justify--center {
+    justify-content: center;
+}
+
+.form__icon--checkbox {
+    width: 16px;
+    height: 16px;
+}
+
 .gp-16 {
     gap: 16px;
+}
+
+.gp-8 {
+    gap: 8px;
+}
+
+.m-b-16 {
+    margin-bottom: 16px;
+}
+
+.m-b-8 {
+    margin-bottom: 8px;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.m-b-32 {
+    margin-bottom: 32px;
+}
+
+.m-p-0 {
+    margin: 0px;
+    padding: 0px;
 }
