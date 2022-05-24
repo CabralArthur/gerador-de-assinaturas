@@ -11,10 +11,6 @@ const getFileSufix = () => {
 }
 
 const changeInput = (input, targetId) => {
-    if (targetId === 'person-image-link') {
-        document.getElementById(targetId).src = input.value;
-        return;
-    }
 
     if (targetId === 'person-whatsapp-link') {
         document.getElementById(targetId).href = input.value;

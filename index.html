@@ -59,12 +59,6 @@
                         onkeyup="changeInput(this, 'person-whatsapp-link')">
                 </div>
 
-                <div class="ds-flex ds-flex__column form__wrapper">
-                    <label for="image-link">Link da Imagem</label>
-                    <input class="form__input" type="text" placeholder="Insira o link da imagem" id="image-link"
-                        onkeyup="changeInput(this, 'person-image-link')">
-                </div>
-
                 <div class="ds-flex ds-flex__align--center form__wrapper">
                     <input type="checkBox" id="has-whatsapp" onchange="changeInput(this, 'person-has-whatsapp')"
                         checked>
@@ -86,69 +80,54 @@
             </div>
         </div>
 
-        <div style="margin: 0px; padding: 0px;" id="main-content">
-            <div style="margin: 0px; padding: 0px; max-width: 257px; font-family: 'Inter', sans-serif;">
-                <div style="display:flex; align-items: center; margin: 0px; padding: 0px;">
-                    <div style="height: 60px; width: 60px; border-radius: 50%; margin: 4px 16px 0 8px;">
-                        <img src="https://pic.onlinewebfonts.com/svg/img_264570.png" alt="Foto do profissional"
-                            style="display: block; object-fit: cover; width: 100%; height: 100%; border-radius: 100px;"
-                            id="person-image-link">
-                    </div>
-                    <div>
-                        <h1 style="font-weight: bold; font-size: 16px; color: #26282a; margin:0;" id="person-name">
-                            Thomas Shelby</h1>
-                        <h2 style="font-size: 10px; color: #4e5255; font-weight: 400; margin:0;" id="person-role">
-                            Diretor Comercial
-                        </h2>
-                        <div style="display: flex;">
-                            <h2 style="color: #26282a; font-weight: normal; font-weight: bold; font-size: 14px; margin: 3px 10px 0px 0px;"
-                                id="person-phone">81 987271 2312</h2>
-                            <a href="https://api.whatsapp.com/send?phone=5581999999999&text=Ol%C3%A1%2C%20Teste"
-                                target="__blank"
-                                style="display: flex; align-items: center; width: 13px; height: 13px; margin-bottom: 5px !important;"
-                                id="person-whatsapp-link">
-                                <img src="https://files.appamigo.com.br/images/__assinatura-emails__/whatsapp-icon.png"
-                                    alt="Ícone do whatsapp" style="width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                    padding: 6px;
-                                    border: 1px solid #D9E1E8;
-                                    border-radius: 6px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <p
-                    style="margin-bottom: 15px; margin-top: 23px; height: 1px; width: 257px; border-bottom: 1px solid #D9E1E8;">
-                </p>
-
-                <div style="display: flex; align-items:center;">
-                    <!-- Imagem do AMIGO -->
-                    <div style="padding-left: 10px; width: 79.79px; height: 18px; margin-right: 89px;">
-                        <img src="https://files.appamigo.com.br/images/__assinatura-emails__/amigo-icon.png"
-                            style="width: 100%; object-fit: cover;" alt="Logo do Amigo">
-                    </div>
-                    <!-- Ícones -->
-                    <div style="display: flex; align-items: center;">
-                        <a href="https://appamigo.com.br/" style="text-decoration: none;" target="_blank">
-                            <!-- Trocar o link dentro o href -->
-                            <img src="https://files.appamigo.com.br/images/__assinatura-emails__/site-amigo.png"
-                                alt="Ícone do Site" style="width: 14px; height: 14px; padding-right: 14px">
-                        </a>
-                        <a href="https://www.instagram.com/amigoapp/" style="text-decoration: none;" target="_blank">
-                            <!-- Trocar o link dentro o href -->
-                            <img src="https://files.appamigo.com.br/images/__assinatura-emails__/instagram-amigo.png"
-                                alt="Ícone do Instagram" style="width: 14px; height: 14px; margin-right: 14px">
-                        </a>
-                        <a href="https://www.linkedin.com/company/appamigo/mycompany/" style="text-decoration: none;"
-                            target="_blank">
-                            <!-- Trocar o link dentro o href -->
-                            <img src="https://files.appamigo.com.br/images/__assinatura-emails__/linkedin-amigo.png"
-                                alt="Ícone do Linkedin" style="width: 14px; height: 14px;">
-                        </a>
-                    </div>
-                </div>
+        <div style="background: #ffffff; width: 320px; height: 194px; font-size: 16px; line-height: 22px; margin: 0px auto; font-family: 'Inter', sans-serif; border-radius: 8px; padding-bottom: 30px;" id="main-content">
+            <div style="margin: 10px auto;">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="body-table">
+                    <tbody>
+                        <table align="left" style="background-color: #FFFFFF; width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td align="left">
+                                        <img style="width: 86px; height: 19.4px;" src="https://files.appamigo.com.br/images/__assinatura-emails__/Amigo.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 0;">
+                                        <p style="max-width: 341px; max-height: 64px; margin: 16px 0 0 0; text-align: left; font-weight: 700; font-size: 18px; line-height: 19px; color: #26282A;" id="person-name">
+                                            Marcela Pedrosa
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 0;">
+                                        <p style="max-width: 341px; font-style: normal; font-weight: 400; margin: 3px 0 0 0; font-size: 12px; color: #4E5255; height: 26px;" id="person-role">
+                                            Analista Full
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 0;">
+                                        <div style="display: flex;">
+                                            <p style="margin: 0; font-size: 12px; font-weight: 700; font-size: 16px; line-height: 15px; color: #26282A; padding-right: 8px; padding-top: 7px;" id="person-phone">
+                                                (81) 99918-1935
+                                            </p>
+                                            <a href="https://api.whatsapp.com/send?phone=5581971178000&amp;text=Ol%C3%A1%2C%20Danyelle!" target="__blank" style="border: 1px solid #C0CDD8; justify-self: center; padding: 6px 4px 5px 6px; border-radius: 8px; display: grid; width: 18px; height: 18px;" id="person-whatsapp-link">
+                                                <img src="https://i.ibb.co/tQKydTS/Wpp.png" alt="Ícone do whatsapp" class="width: 16px; height: 16px;">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding-top: 15px;">
+                                        <img style="width: 14px; height: 14px; margin-right: 14px; cursor: pointer;" src="https://files.appamigo.com.br/images/__assinatura-emails__/web.png">
+                                        <img style="width: 14px; height: 14px; margin-right: 14px; cursor: pointer;" src="https://files.appamigo.com.br/images/__assinatura-emails__/ig.png">
+                                        <img style="width: 14px; height: 14px; cursor: pointer;" src="https://files.appamigo.com.br/images/__assinatura-emails__/in.png">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
